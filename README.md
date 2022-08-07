@@ -1,7 +1,7 @@
 # NameMC-Generator
 Generate NameMC List of available account names
 
-# How to use
+## How to use
 
 * Install the dependencies packages
 ```
