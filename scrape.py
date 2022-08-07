@@ -1,6 +1,4 @@
 from concurrent.futures import thread
-from logging import exception
-from tkinter import W
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
