@@ -123,16 +123,3 @@ for _ in range(10):
   threads.append(t)
   t.join()
     
-
-
-# a = open('C:/Users/MrEbrahim XD/Desktop/python/output.txt' ,'a')
-# driver.get(f"https://namemc.com/search?q=fra")
-# soup = BeautifulSoup(driver.page_source,'lxml')
-# status_div = soup.find("div" , {"id" : "status-bar" } )
-# # status = status_div.find("div" , {"id" , ""})
-# print(status_div.text.strip())
-# a.write(f"fra status is { 'Available' if 'Available' in status_div else 'Not Available' }\n")
-# a.close()
-# driver.quit()
-
-
