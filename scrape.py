@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
 from bs4 import BeautifulSoup
 import time
-import threading
 
 
 
@@ -113,13 +112,8 @@ def getUrl():
 
 
 
-t = threading.Thread(target=getUrl)
+with concurrent.futures.ThreadPoolExecutor() as exe:
+    result = [exe.submit(getUrl) for _ in range(30)]
+for f in concurrent.futures.as_completed(result):
+    print(f.result())
 
-threads = []
-
-t.start()
-
-for _ in range(10):
-  threads.append(t)
-  t.join()
-    
