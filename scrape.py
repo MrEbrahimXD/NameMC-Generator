@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
 from bs4 import BeautifulSoup
-import time
+from time import sleep
 
 
 
@@ -104,7 +104,7 @@ def getUrl():
     except:
       print("There is an error happened , Trying again in 15 (s)")
       driver.get("https://mrebrahimxd.com")
-      time.sleep(wait_time)
+      sleep(wait_time)
     finally:
       print("Trying again ..")
 
